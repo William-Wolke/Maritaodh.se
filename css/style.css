@@ -52,3 +52,40 @@ main{
 .galleri-img{
     max-height: 20rem;
 }
+
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+
+
+
+
+footer {
+    background-color: black;
+    bottom: 0;
+    width: 100vw;
+    position: fixed;
+}
+
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 60vw;
+    margin: auto;
+    padding: 3rem 0rem 3rem 0rem;
+}
+
+footer section section{
+    color: blanchedalmond;
+}
