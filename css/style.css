@@ -137,7 +137,14 @@ footer a{
     color: blue;
 }
 
+
+#kontiner{
+    display: flex;
+}
+
 .förhandsvisning {
-    max-width: 100rem;
-    height: auto;;
+    filter: grayscale(50%);
+    max-width: 30rem;
+    height: auto;
+    border-radius: 50%;
 }
