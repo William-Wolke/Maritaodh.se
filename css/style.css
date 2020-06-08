@@ -83,9 +83,31 @@ footer section{
     text-transform: uppercase;
     max-width: 60vw;
     margin: auto;
-    padding: 3rem 0rem 3rem 0rem;
+    padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
 footer section section{
-    color: blanchedalmond;
+    color: #fff;
+}
+
+footer p,
+footer a{
+    font-size:  1.7rem;
+}
+
+#kontakt-footer,
+#hitta-hit{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#kontakt-footer p,
+#hitta-hit p{
+    padding: 1rem;
+}
+
+#map {
+    height: 2rem;  
+    width: 3rem;  
 }
