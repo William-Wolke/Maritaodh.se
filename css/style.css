@@ -111,3 +111,16 @@ footer a{
     height: 2rem;  
     width: 3rem;  
 }
+
+.fab {
+    transition: all .2s ease-in-out; 
+}
+.fab:hover {
+    transform: scale(2); 
+    color: blue;
+}
+
+.förhandsvisning {
+    max-width: 100rem;
+    height: auto;;
+}
