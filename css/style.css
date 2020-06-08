@@ -49,9 +49,19 @@ main{
     margin-top: 10rem;
 }
 
-.galleri-img{
-    max-height: 20rem;
+.text{
+    margin-bottom: 3rem;
 }
+
+.text p{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#galleri-sektion{
+    display: none;
+}
+
 
 
 h1{
@@ -81,15 +91,13 @@ footer section{
     justify-content: space-around;
     text-align: center;
     text-transform: uppercase;
-    max-width: 60vw;
+    max-width: 70vw;
     margin: auto;
     padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
 footer section section{
     color: #fff;
-    
-    text-decoration: none;
 }
 
 footer p,
@@ -112,9 +120,11 @@ footer a{
 #kontakt-footer p a,
 #hitta-hit p a{
     text-decoration: none;
+    color: #fff;
 }
 
 #map {
-    height: 2rem;  
-    width: 3rem;  
+    display: none;
+    height: 20rem;  
+    width: 40rem;  
 }
