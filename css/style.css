@@ -9,11 +9,11 @@
 
 body{
     font-family: 'Comfortaa', cursive;
-    background-color: #E9F1F7;
+    background-color: #fff;
 }
 
 header{
-    background-color: #000000;
+    background-color: #A16887;
 }
 
 nav{
@@ -77,8 +77,40 @@ h2{
 
 
 
+
+
+
+#container{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.förhandsvisning {
+    filter: grayscale(50%);
+    max-width: 30rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+#dans,
+#massage,
+#måleri {
+    transition: all .3s ease-in-out; 
+}
+#dans:hover,
+#massage:hover,
+#måleri:hover {
+    transform: scale(1.2); 
+    filter: grayscale(0%);
+}
+
+
+
+
 footer {
-    background-color: black;
+    background-color: #A16887;
     bottom: 0;
     width: 100vw;
     position: fixed;
@@ -129,22 +161,3 @@ footer a{
     width: 40rem;  
 }
 
-.fab {
-    transition: all .2s ease-in-out; 
-}
-.fab:hover {
-    transform: scale(2); 
-    color: blue;
-}
-
-
-#kontiner{
-    display: flex;
-}
-
-.förhandsvisning {
-    filter: grayscale(50%);
-    max-width: 30rem;
-    height: auto;
-    border-radius: 50%;
-}
