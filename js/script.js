@@ -29,6 +29,7 @@ function initMap() {
 
   
 function kontrolleraHemKnapp() {
+    console
     hem.style.display = "none";
     omMig.style.display = "none";
     prislista.style.display = "none";
