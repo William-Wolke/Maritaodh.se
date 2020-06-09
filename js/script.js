@@ -15,11 +15,11 @@ function initMap() {
   let galleriKnapp = document.getElementById('galleri');
   let kontaktKnapp = document.getElementById('kontakt');
 
-  let hem = document.getElementById('hem-section');
+  let hem = document.getElementById('hem-sektion');
   let omMig = document.getElementById('om-mig-sektion');
   let prislista = document.getElementById('prislista-sektion');
-  let galleriSektion = document.getElementById('galleri-sektion');
-  let kontaktSektion = document.getElementById('kontakt-sektion');
+  let galleri = document.getElementById('galleri-sektion');
+  let kontakt = document.getElementById('kontakt-sektion');
 
   hemKnapp.addEventListener("click", kontrolleraHemKnapp);
   omMigKnapp.addEventListener("click", kontrolleraOmMigKnapp);
@@ -29,41 +29,41 @@ function initMap() {
 
   
 function kontrolleraHemKnapp() {
-    hemSektion.style.display = "none";
-    omMigSektion.style.display = "none";
-    prislistaSektion.style.display = "none";
-    galleriSektion.style.display = "none";
-    kontaktSektion.style.display = "none";
+    hem.style.display = "none";
+    omMig.style.display = "none";
+    prislista.style.display = "none";
+    galleri.style.display = "none";
+    kontakt.style.display = "none";
 }
 
 function kontrolleraOmMigKnapp() {
-    hemSektion.style.display = "none";
-    omMigSektion.style.display = "block";
-    prislistaSektion.style.display = "block";
-    galleriSektion.style.display = "block";
-    kontaktSektion.style.display = "block";
+    hem.style.display = "none";
+    omMig.style.display = "block";
+    prislista.style.display = "block";
+    galleri.style.display = "block";
+    kontakt.style.display = "block";
 }
 
 function kontrolleraPrislistaKnapp() {
-    hemSektion.style.display = "none";
-    omMigSektion.style.display = "block";
-    prislistaSektion.style.display = "block";
-    galleriSektion.style.display = "block";
-    kontaktSektion.style.display = "block";
+    hem.style.display = "none";
+    omMig.style.display = "block";
+    prislista.style.display = "block";
+    galleri.style.display = "block";
+    kontakt.style.display = "block";
 }
 
 function kontrolleraGalleriKnapp() {
-    hemSektion.style.display = "none";
-    omMigSektion.style.display = "block";
-    prislistaSektion.style.display = "block";
-    galleriSektion.style.display = "block";
-    kontaktSektion.style.display = "block";
+    hem.style.display = "none";
+    omMig.style.display = "block";
+    prislista.style.display = "block";
+    galleri.style.display = "block";
+    kontakt.style.display = "block";
 }
 
 function kontrolleraKontaktKnapp() {
-    hemSektion.style.display = "none";
-    omMigSektion.style.display = "block";
-    prislistaSektion.style.display = "block";
-    galleriSektion.style.display = "block";
-    kontaktSektion.style.display = "block";
+    hem.style.display = "none";
+    omMig.style.display = "block";
+    prislista.style.display = "block";
+    galleri.style.display = "block";
+    kontakt.style.display = "block";
 }
