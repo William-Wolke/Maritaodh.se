@@ -1,12 +1,12 @@
 // Initialize and add the map
 function initMap() {
     // The location of Uluru
-    var uluru = {lat: -25.344, lng: 131.036};
+    let uluru = {lat: -25.344, lng: 131.036};
     // The map, centered at Uluru
-    var map = new google.maps.Map(
+    let map = new google.maps.Map(
         document.getElementById('map'), {zoom: 4, center: uluru});
     // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({position: uluru, map: map});
+    let marker = new google.maps.Marker({position: uluru, map: map});
 }
 
   let hemKnapp = document.getElementById('hem');
@@ -69,14 +69,16 @@ function kontrolleraKontaktKnapp() {
     kontakt.style.display = "block";
 }
 
-var gallery = document.querySelector('#gallery');
-var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
-var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
-var resizeAll = function () {
-    var altura = getVal(gallery, 'grid-auto-rows');
-    var gap = getVal(gallery, 'grid-row-gap');
+
+
+let gallery = document.querySelector('#gallery');
+let getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+let getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+let resizeAll = function () {
+    let altura = getVal(gallery, 'grid-auto-rows');
+    let gap = getVal(gallery, 'grid-row-gap');
     gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-        var el = item;
+        let el = item;
         el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
     });
 };
@@ -87,17 +89,20 @@ gallery.querySelectorAll('img').forEach(function (item) {
     }
     else {
         item.addEventListener('load', function () {
-            var altura = getVal(gallery, 'grid-auto-rows');
-            var gap = getVal(gallery, 'grid-row-gap');
-            var gitem = item.parentElement.parentElement;
+            let altura = getVal(gallery, 'grid-auto-rows');
+            let gap = getVal(gallery, 'grid-row-gap');
+            let gitem = item.parentElement.parentElement;
             gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
             item.classList.remove('byebye');
         });
     }
 });
+
 window.addEventListener('resize', resizeAll);
 gallery.querySelectorAll('.gallery-item').forEach(function (item) {
     item.addEventListener('click', function () {        
         item.classList.toggle('full');        
     });
 });
+
+galleriKnapp.addEventListener("click", resizeAll);
