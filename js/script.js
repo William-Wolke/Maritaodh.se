@@ -9,6 +9,15 @@ function initMap() {
     let marker = new google.maps.Marker({position: uluru, map: map});
 }
 
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
   let hemKnapp = document.getElementById('hem');
   let omMigKnapp = document.getElementById('om-mig');
   let prislistaKnapp = document.getElementById('prislista');
