@@ -265,14 +265,62 @@ footer a{
   }
   .gallery .gallery-item:hover {
     transform: scale(1.025);
-  }
+}
 
 
-  @media (max-width: 600px) {
-    .gallery {
-      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-    }
+
+
+
+
+@media (max-width: 1900px) {
+   body{
+    max-width: 70vw;
   }
+  nav{
+    max-width: 70vw;
+  }
+
+  nav div{
+    padding: 2rem 9rem;
+  }
+
+  main{
+    width: 70vw;
+  }
+  footer section{
+    max-width: 70vw;
+    left: 7vw;
+  }
+}
+
+@media (max-width: 1460px) {
+  body{
+    max-width: 70vw;
+  }
+  
+  nav{
+    max-width: 70vw;
+  }
+
+  nav div{
+    padding: 2rem 9rem;
+  }
+
+  main{
+    width: 70vw;
+  }
+  footer section{
+    max-width: 70vw;
+    left: 7vw;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
   @media (max-width: 400px) {
     .gallery {
       grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
