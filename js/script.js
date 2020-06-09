@@ -19,6 +19,7 @@ function myFunction() {
   }
 
   let hemKnapp = document.getElementById('hem');
+  let hemKnapp = document.querySelectorAll('hem');
   let omMigKnapp = document.getElementById('om-mig');
   let prislistaKnapp = document.getElementById('prislista');
   let galleriKnapp = document.getElementById('galleri');
@@ -35,7 +36,18 @@ function myFunction() {
   prislistaKnapp.addEventListener("click", kontrolleraPrislistaKnapp);
   galleriKnapp.addEventListener("click", kontrolleraGalleriKnapp);
   kontaktKnapp.addEventListener("click", kontrolleraKontaktKnapp);
+  
+  let dansBild = document.getElementById('dans');
+  let massageBild = document.getElementById('massage');
+  let måleriBild = document.getElementById('måleri');
 
+  let dansText = document.getElementById('dansText');
+  let massageText = document.getElementById('massageText');
+  let målningText = document.getElementById('målningText');
+
+  dansBild.addEventListener("mouseenter", dansBildText);
+  massageBild.addEventListener("mouseenter", massageBildText);
+  måleriBild.addEventListener("mouseenter", måleriBildText);
   
 function kontrolleraHemKnapp() {
     console
@@ -76,6 +88,18 @@ function kontrolleraKontaktKnapp() {
     prislista.style.display = "none";
     galleri.style.display = "none";
     kontakt.style.display = "block";
+}
+
+function dansBildText () {
+
+}
+
+function massageBildText () {
+
+}
+
+function måleriBildText () {
+
 }
 
 
