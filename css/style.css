@@ -65,9 +65,9 @@ nav div a{
 
 .topnav a {
   color: #fff;
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 2rem;
+  padding: 2rem;
   display: block;
 }
 
@@ -257,23 +257,7 @@ p{
     opacity: 1;
 }
 
-/*  BILDTEXTERTNA */
 
-#bildTexter {
-  display: grid;
-}
-
-/*#dansText {
-  display: none;
-}
-
-#massageText {
-  display: none;
-}
-
-#målningText {
-  display: none;
-}*/
 
 
 
@@ -447,6 +431,7 @@ footer a{
     display: block;
   }
 
+
 }
 
 
@@ -467,6 +452,20 @@ footer a{
 
   #hitta-hit{
     margin-left: 0vw;
+  }
+  #container{
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 8rem;
+  }
+  
+  .förhandsvisning {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-bottom: 5rem;
+    top: 50%;
+    max-width: 70vw;
   }
 }
 
