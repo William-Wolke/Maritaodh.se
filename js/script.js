@@ -123,3 +123,4 @@ gallery.querySelectorAll('.gallery-item').forEach(function (item) {
 });
 //Utan denna line funkar inte galleriet korrekt
 galleriKnapp.addEventListener("click", resizeAll);
+galleriKnappMobil.addEventListener("click", resizeAll);

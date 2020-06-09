@@ -219,10 +219,12 @@ p{
 }
 
 
-.img-text{
+.img-text,
+.img-text p{
   text-transform: uppercase;
   color: #000;
   font-size: 2rem;
+  opacity: 1;
 }
 
 .mitten {
@@ -236,6 +238,12 @@ p{
   text-align: center;
 }
 
+
+.gallery-item{
+  backface-visibility: hidden;
+  opacity: 1;
+  transition: .5s ease;
+}
 
 #dans,
 #massage,
@@ -257,7 +265,50 @@ p{
     opacity: 1;
 }
 
+#gallery-item-1:hover,
+#gallery-item-2:hover,
+#gallery-item-3:hover,
+#gallery-item-4:hover,
+#gallery-item-5:hover,
+#gallery-item-6:hover,
+#gallery-item-7:hover,
+#gallery-item-8:hover,
+#gallery-item-9:hover,
+#gallery-item-10:hover,
+#gallery-item-11:hover,
+#gallery-item-12:hover,
+#gallery-item-13:hover,
+#gallery-item-14:hover,
+#gallery-item-15:hover,
+#gallery-item-16:hover,
+#gallery-item-17:hover,
+#gallery-item-18:hover,
+#gallery-item-19:hover{
+  opacity: 0.3;
+}
 
+
+#gallery-item-1:hover .mitten,
+#gallery-item-2:hover .mitten,
+#gallery-item-3:hover .mitten,
+#gallery-item-4:hover .mitten,
+#gallery-item-5:hover .mitten,
+#gallery-item-6:hover .mitten,
+#gallery-item-7:hover .mitten,
+#gallery-item-8:hover .mitten,
+#gallery-item-9:hover .mitten,
+#gallery-item-10:hover .mitten,
+#gallery-item-11:hover .mitten,
+#gallery-item-12:hover .mitten,
+#gallery-item-13:hover .mitten,
+#gallery-item-14:hover .mitten,
+#gallery-item-15:hover .mitten,
+#gallery-item-16:hover .mitten,
+#gallery-item-17:hover .mitten,
+#gallery-item-18:hover .mitten,
+#gallery-item-19:hover .mitten{
+  opacity: 1;
+}
 
 
 
@@ -466,6 +517,10 @@ footer a{
     margin-bottom: 5rem;
     top: 50%;
     max-width: 70vw;
+  }
+
+  footer{
+    position: relative;
   }
 }
 
