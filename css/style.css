@@ -84,17 +84,22 @@ p{
 }
 
 #om-mig-sektion{
-    display: block;
+    display: none;
 }
 
 #prislista-sektion{
-    display: block;
+    
     display: grid;
     grid-template-columns: 3fr 1fr;
+    display: none;
 }
 
 #galleri-sektion{
-    display: block;
+    display: none;
+}
+
+#kontakt-sektion{
+    display: none;
 }
 
 
