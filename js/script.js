@@ -9,7 +9,7 @@ function initMap() {
     let marker = new google.maps.Marker({position: uluru, map: map});
 }
 
-  let hemKnapp = document.querySelectorAll('hem');
+  let hemKnapp = document.getElementById('hem');
   let omMigKnapp = document.getElementById('om-mig');
   let prislistaKnapp = document.getElementById('prislista');
   let galleriKnapp = document.getElementById('galleri');
