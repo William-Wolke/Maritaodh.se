@@ -50,7 +50,6 @@ kontaktKnapp.addEventListener("click", kontrolleraKontaktKnapp);
   
   
 function kontrolleraHemKnapp() {
-    console
     hem.style.display = "block";
     omMig.style.display = "none";
     prislista.style.display = "none";
