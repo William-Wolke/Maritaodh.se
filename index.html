@@ -15,22 +15,36 @@
 <body>
     <header>
         <nav>
-            <div id="hem">
+            <div class="hem">
                 <a href="#">Hem</a>
             </div>
-            <div id="om-mig">
-                <a href="#" id="omMigKnapp">Om mig</a>
+            <div class="om-mig">
+                <a href="">Om mig</a>
             </div>
-            <div id="prislista">
-                <a href="#" id="prislistaKnapp">Prislista</a>
+            <div class="prislista">
+                <a href="">Prislista</a>
             </div>
-            <div id="galleri">
-                <a href="#" id="galleriKnapp">Galleri</a>
+            <div class="galleri">
+                <a href="">Galleri</a>
             </div>
-            <div id="kontakt">
-                <a href="#" id="kontaktKnapp">Kontakt</a>
+            <div class="kontakt">
+                <a href="">Kontakt</a>
             </div>
         </nav>
+
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+              <a href="#" class="hem-mobil active">Inre Seende</a>
+              <div id="myLinks">
+                <a href="" class="om-mig-mobil">Om mig</a>
+                <a href="" class="prislista-mobil">Prislista</a>
+                <a href="" class="galleri-mobil">Galleri</a>
+                <a href="" class="kontakt-mobil">Kontakt</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
     </header>
 
     <main>
@@ -66,6 +80,11 @@
 
             <div id="om-mig-grid">
                 <h1>Om mig</h1>
+                
+                <div id="stor-bild-låda">
+                    <img id="stor-bild" src="css/img/marita_odh_stor.jpg" alt="Marita Odh">
+                </div>
+                
                 <section class="text">
                     <p>Jag  heter Marita Odh och är född 1944, bosatt i Åkersberga, Österåkers kommun. Född i Tammerfors, Finland.
                     Genom min utbildning till modist  i tidiga tonåren, så blev min känsla för färg och form tidigt utvecklad. 
@@ -75,7 +94,7 @@
                     </p>
                 </section>
 
-                <img src="css/img/marita_odh.jpg" alt="Marita Odh">
+                <img id="liten-bild" src="css/img/marita_odh.jpg" alt="Marita Odh">
             </div>
 
 

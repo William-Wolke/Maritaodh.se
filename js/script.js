@@ -34,10 +34,45 @@ function initMap() {
   let dansText = document.getElementById('dansText');
   let massageText = document.getElementById('massageText');
   let målningText = document.getElementById('målningText');
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+}
 
-  dansBild.addEventListener("mouseenter", dansBildText);
-  massageBild.addEventListener("mouseenter", massageBildText);
-  måleriBild.addEventListener("mouseenter", måleriBildText);
+let hemKnapp = document.getElementById('hem');
+let omMigKnapp = document.getElementById('om-mig');
+let prislistaKnapp = document.getElementById('prislista');
+let galleriKnapp = document.getElementById('galleri');
+let kontaktKnapp = document.getElementById('kontakt');
+
+let hem = document.getElementById('hem-sektion');
+let omMig = document.getElementById('om-mig-sektion');
+let prislista = document.getElementById('prislista-sektion');
+let galleri = document.getElementById('galleri-sektion');
+let kontakt = document.getElementById('kontakt-sektion');
+
+let hemKnappMobil = document.getElementById('hem-mobil');
+let omMigKnappMobil = document.getElementById('om-mig-mobil');
+let prislistaKnappMobil = document.getElementById('prislista-mobil');
+let galleriKnappMobil = document.getElementById('galleri-mobil');
+let kontaktKnappMobil = document.getElementById('kontakt-mobil');
+
+hemKnappMobil.addEventListener("click", kontrolleraHemKnapp);
+omMigKnappMobil.addEventListener("click", kontrolleraOmMigKnapp);
+prislistaKnappMobil.addEventListener("click", kontrolleraPrislistaKnapp);
+galleriKnappMobil.addEventListener("click", kontrolleraGalleriKnapp);
+kontaktKnappMobil.addEventListener("click", kontrolleraKontaktKnapp);
+
+hemKnapp.addEventListener("click", kontrolleraHemKnapp);
+omMigKnapp.addEventListener("click", kontrolleraOmMigKnapp);
+prislistaKnapp.addEventListener("click", kontrolleraPrislistaKnapp);
+galleriKnapp.addEventListener("click", kontrolleraGalleriKnapp);
+kontaktKnapp.addEventListener("click", kontrolleraKontaktKnapp);
+  
   
 function kontrolleraHemKnapp() {
     console
@@ -79,6 +114,22 @@ function kontrolleraKontaktKnapp() {
     galleri.style.display = "none";
     kontakt.style.display = "block";
 }
+
+
+
+
+let dansBild = document.getElementById('dans');
+  let massageBild = document.getElementById('massage');
+  let måleriBild = document.getElementById('måleri');
+
+  let dansText = document.getElementById('dansText');
+  let massageText = document.getElementById('massageText');
+  let målningText = document.getElementById('målningText');
+
+  dansBild.addEventListener("mouseenter", dansBildText);
+  massageBild.addEventListener("mouseenter", massageBildText);
+  måleriBild.addEventListener("mouseenter", måleriBildText);
+
 
 function dansBildText () {
 
