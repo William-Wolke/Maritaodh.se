@@ -1,30 +1,5 @@
-  let hemKnapp = document.getElementById('hem');
-  let omMigKnapp = document.getElementById('om-mig');
-  let prislistaKnapp = document.getElementById('prislista');
-  let galleriKnapp = document.getElementById('galleri');
-  let kontaktKnapp = document.getElementById('kontakt');
-
-  let hem = document.getElementById('hem-sektion');
-  let omMig = document.getElementById('om-mig-sektion');
-  let prislista = document.getElementById('prislista-sektion');
-  let galleri = document.getElementById('galleri-sektion');
-  let kontakt = document.getElementById('kontakt-sektion');
-
-  hemKnapp.addEventListener("click", kontrolleraHemKnapp);
-  omMigKnapp.addEventListener("click", kontrolleraOmMigKnapp);
-  prislistaKnapp.addEventListener("click", kontrolleraPrislistaKnapp);
-  galleriKnapp.addEventListener("click", kontrolleraGalleriKnapp);
-  kontaktKnapp.addEventListener("click", kontrolleraKontaktKnapp);
-  
-  let dansBild = document.getElementById('dans');
-  let massageBild = document.getElementById('massage');
-  let måleriBild = document.getElementById('måleri');
-
-  let dansText = document.getElementById('dansText');
-  let massageText = document.getElementById('massageText');
-  let målningText = document.getElementById('målningText');
 function myFunction() {
-    var x = document.getElementById("myLinks");
+    let x = document.getElementById("myLinks");
     if (x.style.display === "block") {
       x.style.display = "none";
     } else {
@@ -32,18 +7,21 @@ function myFunction() {
     }
 }
 
+
+//DESKTOP
 let hemKnapp = document.getElementById('hem');
 let omMigKnapp = document.getElementById('om-mig');
 let prislistaKnapp = document.getElementById('prislista');
 let galleriKnapp = document.getElementById('galleri');
 let kontaktKnapp = document.getElementById('kontakt');
 
-let hem = document.getElementById('hem-sektion');
-let omMig = document.getElementById('om-mig-sektion');
-let prislista = document.getElementById('prislista-sektion');
-let galleri = document.getElementById('galleri-sektion');
-let kontakt = document.getElementById('kontakt-sektion');
+hemKnapp.addEventListener("click", kontrolleraHemKnapp);
+omMigKnapp.addEventListener("click", kontrolleraOmMigKnapp);
+prislistaKnapp.addEventListener("click", kontrolleraPrislistaKnapp);
+galleriKnapp.addEventListener("click", kontrolleraGalleriKnapp);
+kontaktKnapp.addEventListener("click", kontrolleraKontaktKnapp);
 
+//MOBIL
 let hemKnappMobil = document.getElementById('hem-mobil');
 let omMigKnappMobil = document.getElementById('om-mig-mobil');
 let prislistaKnappMobil = document.getElementById('prislista-mobil');
@@ -56,14 +34,18 @@ prislistaKnappMobil.addEventListener("click", kontrolleraPrislistaKnapp);
 galleriKnappMobil.addEventListener("click", kontrolleraGalleriKnapp);
 kontaktKnappMobil.addEventListener("click", kontrolleraKontaktKnapp);
 
-hemKnapp.addEventListener("click", kontrolleraHemKnapp);
-omMigKnapp.addEventListener("click", kontrolleraOmMigKnapp);
-prislistaKnapp.addEventListener("click", kontrolleraPrislistaKnapp);
-galleriKnapp.addEventListener("click", kontrolleraGalleriKnapp);
-kontaktKnapp.addEventListener("click", kontrolleraKontaktKnapp);
-  
+
+let hem = document.getElementById('hem-sektion');
+let omMig = document.getElementById('om-mig-sektion');
+let prislista = document.getElementById('prislista-sektion');
+let galleri = document.getElementById('galleri-sektion');
+let kontakt = document.getElementById('kontakt-sektion');
+
+
+
   
 function kontrolleraHemKnapp() {
+    console.log("Hej");
     hem.style.display = "block";
     omMig.style.display = "none";
     prislista.style.display = "none";

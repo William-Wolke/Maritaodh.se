@@ -15,17 +15,6 @@ body{
     margin: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 header{
     background-color: #A16887;
     width: 100vw;
@@ -462,6 +451,14 @@ footer a{
 
 
 @media (max-width: 820px){
+  nav{
+    display: none;
+  }
+
+  .topnav{
+    display: block;
+  }
+
   footer section{
     display: flex;
     flex-direction: column;
