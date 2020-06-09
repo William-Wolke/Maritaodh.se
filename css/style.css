@@ -170,6 +170,26 @@ p{
     filter: grayscale(0%);
 }
 
+/*  BILDTEXTERTNA */
+
+#bildTexter {
+  display: grid;
+}
+
+/*#dansText {
+  display: none;
+}
+
+#massageText {
+  display: none;
+}
+
+#målningText {
+  display: none;
+}*/
+
+
+
 
 
 
