@@ -472,12 +472,12 @@ footer a{
 
 @media (max-width: 820px){
   main{
-    width: 60vw;
-    margin: auto;
-    margin-top: 20vh;
+    margin-top: 15vh;
     margin-bottom: 40vh;
-    position: relative;
     min-height: 40vh;
+  }
+  #stor-bild{
+    max-width: 60vw;
   }
   nav{
     display: none;
