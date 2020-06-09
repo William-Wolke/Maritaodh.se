@@ -104,34 +104,7 @@ function kontrolleraKontaktKnapp() {
 }
 
 
-
-
-let dansBild = document.getElementById('dans');
-  let massageBild = document.getElementById('massage');
-  let måleriBild = document.getElementById('måleri');
-
-  let dansText = document.getElementById('dansText');
-  let massageText = document.getElementById('massageText');
-  let målningText = document.getElementById('målningText');
-
-  dansBild.addEventListener("mouseenter", dansBildText);
-  massageBild.addEventListener("mouseenter", massageBildText);
-  måleriBild.addEventListener("mouseenter", måleriBildText);
-
-
-function dansBildText () {
-
-}
-
-function massageBildText () {
-
-}
-
-function måleriBildText () {
-
-}
-
-
+//Kod för bildgalleriet
 
 let gallery = document.querySelector('#gallery');
 let getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
@@ -166,5 +139,5 @@ gallery.querySelectorAll('.gallery-item').forEach(function (item) {
         item.classList.toggle('full');        
     });
 });
-
+//Utan denna line funkar inte galleriet korrekt
 galleriKnapp.addEventListener("click", resizeAll);
