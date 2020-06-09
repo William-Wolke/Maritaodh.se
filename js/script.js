@@ -30,7 +30,7 @@ function initMap() {
   
 function kontrolleraHemKnapp() {
     console
-    hem.style.display = "none";
+    hem.style.display = "block";
     omMig.style.display = "none";
     prislista.style.display = "none";
     galleri.style.display = "none";
@@ -40,17 +40,17 @@ function kontrolleraHemKnapp() {
 function kontrolleraOmMigKnapp() {
     hem.style.display = "none";
     omMig.style.display = "block";
-    prislista.style.display = "block";
-    galleri.style.display = "block";
-    kontakt.style.display = "block";
+    prislista.style.display = "none";
+    galleri.style.display = "none";
+    kontakt.style.display = "none";
 }
 
 function kontrolleraPrislistaKnapp() {
     hem.style.display = "none";
-    omMig.style.display = "block";
+    omMig.style.display = "none";
     prislista.style.display = "block";
-    galleri.style.display = "block";
-    kontakt.style.display = "block";
+    galleri.style.display = "none";
+    kontakt.style.display = "none";
 }
 
 function kontrolleraGalleriKnapp() {
