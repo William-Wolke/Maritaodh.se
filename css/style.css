@@ -472,6 +472,7 @@ footer a{
 
 @media (max-width: 820px){
   main{
+    width: 80vw;
     margin-top: 15vh;
     margin-bottom: 40vh;
     min-height: 40vh;
