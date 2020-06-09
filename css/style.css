@@ -15,6 +15,21 @@ body{
     margin: auto;
 }
 
+
+
+
+.img-text{
+  text-transform: uppercase;
+  color: #000;
+}
+
+
+
+
+
+
+
+
 header{
     background-color: #A16887;
     width: 100vw;
