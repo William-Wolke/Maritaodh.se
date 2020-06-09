@@ -18,10 +18,6 @@ body{
 
 
 
-.img-text{
-  text-transform: uppercase;
-  color: #000;
-}
 
 
 
@@ -40,7 +36,6 @@ header{
 
 nav{
     display: flex;
-    display: none;
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
@@ -69,6 +64,7 @@ nav div a{
 
 
 .topnav {
+  display: none;
   overflow: hidden;
   background-color: #A16887;
   position: relative;
@@ -217,23 +213,59 @@ p{
     justify-content: space-around;
 }
 
+
+
+
+
+
+
 .förhandsvisning {
-    filter: grayscale(50%);
-    max-width: 30rem;
-    height: auto;
-    border-radius: 50%;
+  filter: grayscale(50%);
+  max-width: 30rem;
+  height: auto;
+  border-radius: 50%;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
+
+
+.img-text{
+  text-transform: uppercase;
+  color: #000;
+  font-size: 2rem;
+}
+
+.mitten {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 #dans,
 #massage,
 #måleri {
     transition: all .3s ease-in-out; 
 }
+
 #dans:hover,
 #massage:hover,
 #måleri:hover {
     transform: scale(1.2); 
     filter: grayscale(0%);
+    opacity: 0.3;
+}
+
+#container-dans:hover .mitten,
+#container-massage:hover .mitten,
+#container-måleri:hover .mitten{
+    opacity: 1;
 }
 
 /*  BILDTEXTERTNA */
