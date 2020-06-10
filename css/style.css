@@ -93,8 +93,8 @@ nav div a{
 main{
     width: 60vw;
     margin: auto;
-    margin-top: 10vh;
-    margin-bottom: 20vh;
+    margin-top: 10rem;
+    margin-bottom: 20rem;
     position: relative;
     min-height: 70vh;
 }
@@ -472,10 +472,10 @@ footer a{
 
 @media (max-width: 820px){
   main{
-    width: 80vw;
-    margin-top: 15vh;
-    margin-bottom: 40vh;
-    min-height: 40vh;
+    width: 90vw;
+    margin-top: 10rem;
+    margin-bottom: 35rem;
+    min-height: 70vh;
   }
   #stor-bild{
     max-width: 60vw;
@@ -497,6 +497,7 @@ footer a{
   #hitta-hit{
     margin-left: 0vw;
   }
+
   #container{
     flex-direction: column;
     margin: auto;
@@ -508,11 +509,21 @@ footer a{
     transition: .5s ease;
     backface-visibility: hidden;
     margin-bottom: 5rem;
+    left: 9vw;
     top: 50%;
     max-width: 70vw;
   }
 
-  
+  #prislista-sektion-grid p{
+    font-size: 1.6rem;
+  }
+}
+
+
+@media (max-width: 330px){
+  main{
+    
+  }
 }
 
 
