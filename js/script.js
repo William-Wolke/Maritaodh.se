@@ -86,76 +86,27 @@ function kontrolleraKontaktKnapp() {
 }
 
 
-//Kod för bildgalleriet
-
-let gallery = document.querySelector('#gallery');
-let getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
-let getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
-let resizeAll = function () {
-    let altura = getVal(gallery, 'grid-auto-rows');
-    let gap = getVal(gallery, 'grid-row-gap');
-    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-        let el = item;
-        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-    });
-};
-gallery.querySelectorAll('img').forEach(function (item) {
-    item.classList.add('byebye');
-    if (item.complete) {
-        console.log(item.src);
-    }
-    else {
-        item.addEventListener('load', function () {
-            let altura = getVal(gallery, 'grid-auto-rows');
-            let gap = getVal(gallery, 'grid-row-gap');
-            let gitem = item.parentElement.parentElement;
-            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-            item.classList.remove('byebye');
-        });
-    }
-});
-
-window.addEventListener('resize', resizeAll);
-gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-    item.addEventListener('click', function () {        
-        item.classList.toggle('full');        
-    });
-});
-//Utan denna line funkar inte galleriet korrekt
-galleriKnapp.addEventListener("click", resizeAll);
-galleriKnappMobil.addEventListener("click", resizeAll);
 
 
 
-
-
-
-
-
-
-
-
-// Get the modal
-let modal = document.getElementById("myModal");
+const modal = document.querySelector(".modal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-let img = document.getElementById("gallery-item");
+let img = document.getElementById("bild-1");
+let img2 = document.getElementById("bild-2");
+
+
+
+
+
+
 let modalImg = document.getElementById("img01");
 let captionText = document.getElementById("caption");
 
-img.addEventListener("click", display);
-
-function display () {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
 
 
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
 }
