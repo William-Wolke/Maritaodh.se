@@ -195,16 +195,25 @@ p{
     display: grid;
     grid-template-columns: 5fr 2fr;
     gap: 3rem;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+.info-text{
+  padding: 2rem;
 }
 
 
 .pris{
   background-color: #81313d;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .pris p{
   text-align: center;
-  top: 35%;
 }
 
 
