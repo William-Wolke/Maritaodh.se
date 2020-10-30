@@ -16,7 +16,7 @@ body{
 }
 
 header{
-    background-color: #A16887;
+    background-color: #913643;
     width: 100vw;
     left: 0;
     position: fixed;
@@ -40,7 +40,7 @@ nav div{
 }
 
 nav div:hover{
-    background-color: #824670;
+    background-color: #81313d;
 
 }
 
@@ -56,7 +56,7 @@ nav div a{
 .topnav {
   display: none;
   overflow: hidden;
-  background-color: #A16887;
+  background-color: #913643;
   position: relative;
 }
 
@@ -73,7 +73,7 @@ nav div a{
 }
 
 .topnav a.icon {
-  background: #824670;
+  background: #81313d;
   display: block;
   position: absolute;
   right: 0;
@@ -81,12 +81,12 @@ nav div a{
 }
 
 .topnav a:hover {
-  background-color: #824670;
+  background-color: #81313d;
   color: black;
 }
 
 .active {
-  color: #824670;
+  color: #81313d;
 }
 
 
@@ -196,6 +196,9 @@ p{
     gap: 1rem;
 }
 
+.text-om-kuser{
+  grid-column: 1/-1;
+}
 
 
 
@@ -420,7 +423,7 @@ p{
 
 
 footer {
-    background-color: #A16887;
+    background-color: #913643;
     bottom: 0;
     width: 100vw;
     position: absolute;
