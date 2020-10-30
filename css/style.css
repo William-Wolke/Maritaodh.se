@@ -190,15 +190,26 @@ p{
     filter: grayscale(0%);
 }
 
-#prislista-sektion-grid{
+.prislista-sektion-grid{
+    margin-top: 5rem;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 5fr 2fr;
+    gap: 3rem;
 }
 
-.text-om-kuser{
-  grid-column: 1/-1;
+
+.pris{
+  background-color: #81313d;
 }
+
+.pris p{
+  text-align: center;
+  top: 35%;
+}
+
+
+
+
 
 
 
