@@ -52,18 +52,18 @@ nav div a{
 
 
 
-#topnav {
+.topnav {
   display: none;
   overflow: hidden;
   background-color: #913643;
   position: relative;
 }
 
-#topnav #myLinks {
+.topnav #myLinks {
   display: none;
 }
 
-#topnav a {
+.topnav a {
   color: #fff;
   text-decoration: none;
   font-size: 2rem;
@@ -71,7 +71,7 @@ nav div a{
   display: block;
 }
 
-#topnav a.icon {
+.topnav a.icon {
   background: #81313d;
   display: block;
   position: absolute;
@@ -79,7 +79,7 @@ nav div a{
   top: 0;
 }
 
-#topnav a:hover {
+.topnav a:hover {
   background-color: #81313d;
   color: black;
 }
@@ -591,7 +591,8 @@ footer a{
   }
 
   .topnav{
-    display: block;#  }
+    display: block;
+  }
 
   footer section{
     display: flex;
@@ -623,25 +624,25 @@ footer a{
     max-width: 90vw;
   }
 
-  #prislista-sektion-grid p{
+  .prislista-sektion-grid p{
     font-size: 1.6rem;
   }
 }
-
-
-@media (max-width: 330px){
-  main{
-    
-  }
-}
-
 
 @media (max-width: 600px) {
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   }
+  .prislista-sektion-grid{
+    display: block;
+  }
+
+  .prislista-sektion-grid .pris{
+    padding: 5rem;
+  }
 }
-  @media (max-width: 400px) {
+
+@media (max-width: 400px) {
     .gallery {
       grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     }
