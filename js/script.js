@@ -22,6 +22,7 @@ galleriKnapp.addEventListener("click", kontrolleraGalleriKnapp);
 kontaktKnapp.addEventListener("click", kontrolleraKontaktKnapp);
 
 //MOBIL
+let topnav = document.getElementById('topnav');
 let hemKnappMobil = document.getElementById('hem-mobil');
 let omMigKnappMobil = document.getElementById('om-mig-mobil');
 let prislistaKnappMobil = document.getElementById('prislista-mobil');
@@ -51,6 +52,7 @@ function kontrolleraHemKnapp() {
     prislista.style.display = "none";
     galleri.style.display = "none";
     kontakt.style.display = "none";
+    topnav.style.display = "none";
 }
 
 function kontrolleraOmMigKnapp() {
@@ -59,6 +61,7 @@ function kontrolleraOmMigKnapp() {
     prislista.style.display = "none";
     galleri.style.display = "none";
     kontakt.style.display = "none";
+    topnav.style.display = "none";
 }
 
 function kontrolleraPrislistaKnapp() {
@@ -67,6 +70,7 @@ function kontrolleraPrislistaKnapp() {
     prislista.style.display = "block";
     galleri.style.display = "none";
     kontakt.style.display = "none";
+    topnav.style.display = "none";
 }
 
 function kontrolleraGalleriKnapp() {
@@ -75,6 +79,7 @@ function kontrolleraGalleriKnapp() {
     prislista.style.display = "none";
     galleri.style.display = "block";
     kontakt.style.display = "none";
+    topnav.style.display = "none";
 }
 
 function kontrolleraKontaktKnapp() {
@@ -83,8 +88,8 @@ function kontrolleraKontaktKnapp() {
     prislista.style.display = "none";
     galleri.style.display = "none";
     kontakt.style.display = "block";
+    topnav.style.display = "none";
 }
-
 
 
 
