@@ -591,7 +591,8 @@ footer a{
   }
 
   .topnav{
-    display: block;#  }
+    display: block;  
+  }
 
   footer section{
     display: flex;
